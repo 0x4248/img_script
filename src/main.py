@@ -13,8 +13,8 @@ SUPPORTED_IMAGES = [".png", ".jpg", ".jpeg", ".bmp", ".tiff", ".tif"]
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Use a script to manipulate images.")
-    parser.add_argument("script", help="The script to use.")
-    parser.add_argument("image", help="The image to use.")
+    parser.add_argument("script", help="The script to use to edit the images.")
+    parser.add_argument("image", help="The image to use the script on. Use * to use the script on all images in the current directory.")
     args = parser.parse_args()
 
     if not os.path.exists(args.script):
@@ -99,7 +99,3 @@ if __name__ == "__main__":
                 elif line.startswith("ADD_TEXT"):
                     cv2.putText(image, line.split(" ")[1], (int(line.split(" ")[2]), int(line.split(" ")[3])), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
         cv2.imwrite(args.image, image)
-
-    
-
-        
