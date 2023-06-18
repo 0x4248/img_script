@@ -17,10 +17,12 @@ if __name__ == "__main__":
     parser.add_argument("image", help="The image to use the script on. Use * to use the script on all images in the current directory.")
     args = parser.parse_args()
 
+    # Check that the script exists.
     if not os.path.exists(args.script):
         print("Script does not exist.")
         sys.exit(1)
     
+    # Check that the image(s) exist.
     if args.image != "*" and not os.path.exists(args.image):
         print("Image does not exist.")
         sys.exit(1)
