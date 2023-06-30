@@ -1,6 +1,6 @@
 # img_script
 # Use a script to manipulate images.
-# Github: https://www.github.com/awesomelewis2007/img_script
+# Github: https://www.github.com/lewisevans2007/img_script
 # Licence: GNU General Public License v3.0
 # By: Lewis Evans
 
