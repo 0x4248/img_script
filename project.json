@@ -3,9 +3,9 @@
     "description": "Use a script to manipulate images.",
     "version": "",
     "main_file": "src/main.py",
-    "author": "Lewis Evans",
+    "author": "0x4248",
     "license": "GNU General Public License v3.0",
-    "url": "https://www.github.com/lewisevans2007/img_script",
+    "url": "https://www.github.com/0x4248/img_script",
     "email": "none",
     "languages": [
         "python"
